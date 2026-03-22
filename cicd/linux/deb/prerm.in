@@ -1,0 +1,6 @@
+ #!/bin/sh
+
+if [ -f /usr/bin/@PROJECT_NAME@ ]
+then
+    rm /usr/bin/@PROJECT_NAME@
+fi

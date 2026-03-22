@@ -1,0 +1,10 @@
+{
+   "rabbit_host": "127.0.0.1",
+   "rabbit_port": 5672,
+   "rabbit_login": "guest",
+   "rabbit_password": "guest",
+   "converter_path": "/home/smrnv/Code/pipelinerunner/converters/script_3.py",
+   "data_storage": "/home/smrnv/storage",
+   "sub_queue_name": "converter_2_queue",
+   "pub_queue_name": "converter_3_queue"
+}

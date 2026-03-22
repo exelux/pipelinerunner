@@ -1,0 +1,10 @@
+{
+   "rabbit_host": "@DEFAULT_RABBIT_HOST@",
+   "rabbit_port": @DEFAULT_RABBIT_PORT@,
+   "rabbit_login": "@DEFAULT_RABBIT_LOGIN@",
+   "rabbit_password": "@DEFAULT_RABBIT_PASSWORD@",
+   "sub_queue_name": "@DEFAULT_SUB_QUEUE_NAME@",
+   "pub_queue_name": "@DEFAULT_PUB_QUEUE_NAME@",
+   "converter_path": "@DEFAULT_CONVERTER_PATH@",
+   "data_storage": "@DEFAULT_DATA_STORAGE@"
+}

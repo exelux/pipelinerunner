@@ -1,0 +1,6 @@
+[Paths]
+Prefix = @LIBPACK_DEPLOY_PATH@
+Libraries = @LIBPACK_DEPLOY_PATH@/lib
+LibrariesExecutables = @LIBPACK_DEPLOY_PATH@/libexec
+Plugins = @LIBPACK_DEPLOY_PATH@/plugins
+Translations = @LIBPACK_DEPLOY_PATH@/translations
