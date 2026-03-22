@@ -7,5 +7,5 @@ build
 
 deploy
 ```
-./cicd/linux/deploy.sh .
+./cicd/linux/deploy.sh -d <project_dir>
 ```
