@@ -152,7 +152,8 @@ bool ConverterService::createEnv()
 
     if (!QFile::copy(inputFilePath, _jobEnv.inputTmpFile))
     {
-        qCCritical(converterplugin) << "unable to copy input file";
+        qCCritical(converterplugin)
+            << "unable to copy input file" << inputFileInfo << _jobEnv.inputTmpFile;
         return false;
     }
 
@@ -175,6 +176,7 @@ bool ConverterService::startConverter()
     args << _jobEnv.inputTmpFile;
     args << _jobEnv.outputTmpFile;
 
+    qCInfo(converterplugin) << "run python3:" << args;
     _process.start("python3", args);
 
     return true;
@@ -209,7 +211,8 @@ STL::optional<QString> ConverterService::copyResultFile()
 
     if (!QFile::copy(_jobEnv.outputTmpFile, outputFile))
     {
-        qCCritical(converterplugin) << "unable to copy output file";
+        qCCritical(converterplugin)
+            << "unable to copy output file" << _jobEnv.outputTmpFile << outputFile;
         return STL::nullopt;
     }
 
